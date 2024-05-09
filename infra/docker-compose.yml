@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+  mysql_db:
+    image: mysql:8
+    restart: always
+    ports: # Удалить
+      - "3306:3306"
+    env_file:
+      - .env      
+    volumes:
+      - ./dbdata:/var/lib/mysql/
+  opt-be:
+    image: university/optimize-be
+    restart: always
+    ports: # Удалить
+      - "5050:5000"      
+    env_file:
+      - .env      
+  opt-fe:
+    image: university/optimize-fe
+    restart: always
+    ports:
+      - "8089:8888" # Надо поменять порт на 80 для виртуалки перед деплоем  
+    env_file:
+      - .env
+    environment:
+      - WEB_API_BASE_URL=http://opt-be:5000

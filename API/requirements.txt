@@ -1,0 +1,9 @@
+mysql-connector-python==8.3.0
+marshmallow==3.21.1
+numpy==1.26.4
+scipy==1.12.0
+marshmallow==3.21.1
+Flask==3.0.2
+flask-apispec==0.11.4
+Flask-Cors==4.0.0
+Flask-RESTful==0.3.10

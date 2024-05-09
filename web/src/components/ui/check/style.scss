@@ -1,0 +1,32 @@
+.check {
+  display: grid;
+  .search {
+    display: flex;
+    justify-self: space-between;
+    gap: 20px;
+  }
+
+  .found_items {
+    margin-top: 20px;
+
+    .output {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+
+      div > p.title {
+        font-weight: bold;
+      }
+
+      .arrays {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        .array {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

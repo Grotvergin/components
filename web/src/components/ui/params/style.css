@@ -1,0 +1,12 @@
+.model_param > p {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'optim_param'
+        'model_param';
+    gap: 20px;
+}
+

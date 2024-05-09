@@ -1,0 +1,61 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  .content {
+    display: flex;
+  }
+  .hide {
+    display: none;
+  }
+
+  .graph {
+    max-width: 560px;
+    height: 560px;
+    border: 1px solid red;
+  }
+}
+
+.vah-block {
+  .name {
+    grid-area: name;
+  }
+
+  .left_col {
+    grid-area: left_col;
+    gap: 10px;
+  }
+
+  .right_col {
+    grid-area: right_col;
+    gap: 10px;
+  }
+
+  .btn {
+    grid-area: btn;
+  }
+
+  .computed {
+    grid-area: computed;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "name name"
+      "left_col right_col"
+      "btn btn"
+      "computed computed";
+    gap: 10px;
+    padding: 10px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .field {
+    margin: 5px;
+  }
+}

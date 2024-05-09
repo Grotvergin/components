@@ -1,0 +1,8 @@
+.hide {
+  display: none;
+}
+
+.data {
+  display: flex;
+  margin: 20px;
+}
